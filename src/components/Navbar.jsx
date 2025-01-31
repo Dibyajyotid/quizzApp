@@ -4,12 +4,14 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <div className="navbar shadow-2xl">
-      <div className="flex justify-between items-center text-emerald-700 container mx-auto px-4 h-20 w-4/5">
+      <div className="flex justify-between items-center container mx-auto px-4 h-20 w-4/5">
         <Link to={"/"}>
           <div className="flex">
-            <p className=" text-3xl  font-extrabold">
-              <span className="text-blue-900">Quizz</span>App
-            </p>
+            <h3 className=" text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-900 to-emerald-600">
+            
+                Quizz App
+              
+            </h3>
           </div>
         </Link>
         <div className="flex-none">

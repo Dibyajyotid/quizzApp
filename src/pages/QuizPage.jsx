@@ -125,7 +125,7 @@ const Quiz = () => {
                 <button
                   key={index}
                   onClick={() => handleAnswerClick(option.isCorrect)}
-                  className="w-full bg-gray-100 hover:bg-emerald-500 hover:text-white transition-all p-3 rounded-lg text-left"
+                  className="w-full bg-gray-100 hover:bg-gradient-to-r from-blue-500 to-emerald-400 hover:text-white transition-all p-3 rounded-lg text-left"
                 >
                   {option.answerText}
                 </button>

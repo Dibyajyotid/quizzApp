@@ -18,7 +18,7 @@ const Metadata = () => {
         <img src="IME-Blog-Headers-8.jpg" alt="Quiz" />
       </figure>
       <div className="card-body">
-        <h2 className="card-title">
+        <h2 className="card-title text-transparent bg-clip-text bg-gradient-to-r from-blue-900 to-emerald-600">
           {quizMeta ? quizMeta.title : "Loading..."}
         </h2>
         <p>
