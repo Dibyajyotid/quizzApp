@@ -10,9 +10,8 @@ const Quiz = () => {
   const [showScore, setShowScore] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
-  const [timeLeft, setTimeLeft] = useState(15); // ✅ Timer state
+  const [timeLeft, setTimeLeft] = useState(15);
 
-  // Fetch quiz data when the component loads
   useEffect(() => {
     const loadQuizData = async () => {
       try {
@@ -38,7 +37,6 @@ const Quiz = () => {
     loadQuizData();
   }, []);
 
-  // Timer for each question
   useEffect(() => {
     if (timeLeft === 0) {
       handleNextQuestion(0); // Auto-skip to the next question with 0 points
@@ -56,7 +54,6 @@ const Quiz = () => {
     handleNextQuestion();
   };
 
-  // Moves to the next question
   const handleNextQuestion = (points = null) => {
     if (points !== null) {
       setScore((prev) => prev + points); // Assign score if timer hits 0

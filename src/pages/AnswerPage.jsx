@@ -10,7 +10,7 @@ const Answers = () => {
   useEffect(() => {
     const loadQuizData = async () => {
       const data = await fetchQuizData();
-      console.log("Fetched Quiz Data:", data); // Check entire structure here
+      console.log("Fetched Quiz Data:", data);
 
       setQuizData(data.questions);
     };
@@ -39,7 +39,6 @@ const Answers = () => {
                   "No correct answer"}
               </p>
 
-              {/* Conditional rendering for detailed_solution */}
               <p className="mt-4 text-gray-600">
                 {question.detailedSolution || "No solution available"}
               </p>
@@ -47,7 +46,7 @@ const Answers = () => {
           );
         })
       ) : (
-        <div>Loading...</div> // Handle empty quizData
+        <div>Loading...</div>
       )}
 
       <div className="text-center mt-8">
