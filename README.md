@@ -76,3 +76,26 @@ like this in the screen shot
 ![Image](https://github.com/user-attachments/assets/5ad721ce-ec88-4337-98e4-9b700746ac89)
 
 now we just have to call for '/api' using the axios or fetch for the jsonlink
+
+<-----------------x------------------->
+
+SETUP INSTRUCTION
+
+1.download the Project from the github or use 
+
+    git clone https://github.com/Dibyajyotid/quizzApp.git
+
+2.Then
+
+    npm install
+
+3. then
+
+       npm run dev
+
+<------------------x------------------>
+
+PROJECT OVERVIEW
+
+Video Walkthrough
+
