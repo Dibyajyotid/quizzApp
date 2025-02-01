@@ -73,4 +73,6 @@ rewrite: (path) => path.replace(/^\/api/, ''),
 
 like this in the screen shot
 
+E:\PROJECTS\quizzApp\image.png
+
 now we just have to call for '/api' using the axios or fetch for the jsonlink
