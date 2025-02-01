@@ -59,18 +59,18 @@ then -
 ---
 
 Then added the following in the vite.config.js file to bypass the CORS by setting up a proxy server
-
-    server: {
-        proxy: {
-            '/api': {
-                target: 'https://api.jsonserve.com/Uw5CrX',
-                changeOrigin: true,
-                secure: false,
-                rewrite: (path) => path.replace(/^\/api/, ''),
-            },
-        },
-    },
+server: {
+proxy: {
+'/api': {
+target: 'https://api.jsonserve.com/Uw5CrX',
+changeOrigin: true,
+secure: false,
+rewrite: (path) => path.replace(/^\/api/, ''),
+},
+},
+},
 
 like this in the screen shot
+
 
 now we just have to call for '/api' using the axios or fetch for the jsonlink
