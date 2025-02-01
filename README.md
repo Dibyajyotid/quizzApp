@@ -72,5 +72,4 @@ rewrite: (path) => path.replace(/^\/api/, ''),
 
 like this in the screen shot
 
-
 now we just have to call for '/api' using the axios or fetch for the jsonlink
