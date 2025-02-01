@@ -49,14 +49,14 @@ then - npm install - npm run dev
 
 Then added the following in the vite.config.js file to bypass the CORS by setting up a proxy server
 server: {
-proxy: {
-'/api': {
-target: 'https://api.jsonserve.com/Uw5CrX',
-changeOrigin: true,
-secure: false,
-rewrite: (path) => path.replace(/^\/api/, ''),
-},
-},
+    proxy: {
+        '/api': {
+            target: 'https://api.jsonserve.com/Uw5CrX',
+            changeOrigin: true,
+            secure: false,
+            rewrite: (path) => path.replace(/^\/api/, ''),
+        },
+    },
 },
 
 like this in the screen shot
