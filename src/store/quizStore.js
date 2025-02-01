@@ -1,8 +1,11 @@
 import axios from "axios";
 
+const apiURL =
+  import.meta.env.VITE_API_URL || "https://api.jsonserve.com/Uw5CrX";
+
 export const fetchQuizData = async () => {
   try {
-    const response = await axios.get("/api");
+    const response = await axios.get(apiURL);
     console.log("API Response:", response.data);
 
     return {

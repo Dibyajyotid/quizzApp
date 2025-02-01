@@ -4,10 +4,12 @@ import { Link } from "react-router-dom";
 
 const Metadata = () => {
   const [quizMeta, setQuizMeta] = useState(null);
+  const apiURL =
+    import.meta.env.VITE_API_URL || "https://api.jsonserve.com/Uw5CrX";
 
   useEffect(() => {
     axios
-      .get("/api")
+      .get(apiURL)
       .then((response) => setQuizMeta(response.data))
       .catch((error) => console.error("Failed to load Data: ", error));
   }, []);
@@ -36,10 +38,10 @@ const Metadata = () => {
           {quizMeta?.questions_count || "loading..."}
         </p>
         <div className="card-actions justify-end">
-        <Link to={"/quiz"}>
-          <button className="btn btn-primary border-emerald-700 text-emerald-700">
-            Start Quiz
-          </button>
+          <Link to={"/quiz"}>
+            <button className="btn btn-primary border-emerald-700 text-emerald-700">
+              Start Quiz
+            </button>
           </Link>
         </div>
       </div>
