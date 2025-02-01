@@ -73,4 +73,6 @@ rewrite: (path) => path.replace(/^\/api/, ''),
 
 like this in the screen shot
 
+![Image](https://github.com/user-attachments/assets/5ad721ce-ec88-4337-98e4-9b700746ac89)
+
 now we just have to call for '/api' using the axios or fetch for the jsonlink
