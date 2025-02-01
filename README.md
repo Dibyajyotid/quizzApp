@@ -59,6 +59,7 @@ then -
 ---
 
 Then added the following in the vite.config.js file to bypass the CORS by setting up a proxy server
+
 server: {
 proxy: {
 '/api': {
