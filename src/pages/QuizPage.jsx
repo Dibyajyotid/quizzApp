@@ -10,7 +10,7 @@ const Quiz = () => {
   const [showScore, setShowScore] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
-  const [timeLeft, setTimeLeft] = useState(15);
+  const [timeLeft, setTimeLeft] = useState(90);
 
   useEffect(() => {
     const loadQuizData = async () => {
@@ -62,7 +62,7 @@ const Quiz = () => {
     const nextQuestion = currentQuestion + 1;
     if (nextQuestion < quizData.length) {
       setCurrentQuestion(nextQuestion);
-      setTimeLeft(15); // Reset timer for the next question
+      setTimeLeft(90); // Reset timer for the next question
     } else {
       setShowScore(true);
     }
@@ -125,7 +125,7 @@ const Quiz = () => {
                 <button
                   key={index}
                   onClick={() => handleAnswerClick(option.isCorrect)}
-                  className="w-full bg-gray-100 hover:bg-gradient-to-r from-blue-500 to-emerald-400 hover:text-white transition-all p-3 rounded-lg text-left"
+                  className="btn border-none text-lg w-full bg-gray-100 hover:bg-gradient-to-r from-blue-500 to-emerald-400 hover:text-white transition-all p-3 rounded-lg text-left"
                 >
                   {option.answerText}
                 </button>

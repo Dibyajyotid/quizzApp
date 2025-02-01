@@ -20,7 +20,7 @@ const Answers = () => {
 
   return (
     <div className="container max-w-5xl mx-auto my-10 p-6 bg-white shadow-lg rounded-lg">
-      <h1 className="text-2xl font-bold text-center mb-6 flex justify-center items-center gap-2 text-emerald-900">
+      <h1 className="text-2xl font-bold text-center mb-6 flex justify-center items-center gap-2 bg-gradient-to-r from-blue-500 to-emerald-400 h-20 rounded-lg">
         <NotebookPen /> Answer Explanations
       </h1>
 
