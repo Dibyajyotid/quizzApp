@@ -17,9 +17,13 @@ TailwindCss
 DaisyUI
 Lucide-React
 
-First I initialize the React Project using - npm create vite@latest .
+First I initialize the React Project using
+npm create vite@latest .
 
-then installed TailwindCss 3 using - npm install -D tailwindcss@3 postcss autoprefixer - npx tailwindcss init
+then installed TailwindCss 3 using
+
+    npm install -D tailwindcss@3 postcss autoprefixer
+    npx tailwindcss init
 
 then added these in the index.css
 
@@ -35,29 +39,37 @@ but in my project this didnot worked so i added these
 
     @import "tailwindcss/utilities";
 
-then installed DaisyUI for UI components - npm i -D daisyui@latest
+then installed DaisyUI for UI components
+
+    npm i -D daisyui@latest
 
 then added the daisy UI in the tailwind.config file by folowing the installation doc in the daisyUI
 
-then installed Lucide-React using - npm install lucide-react
+then installed Lucide-React using -
+
+    npm install lucide-react
 
 this library is for the icons
 
-then - npm install - npm run dev
+then -
+
+    npm install
+    npm run dev
 
 ---
 
 Then added the following in the vite.config.js file to bypass the CORS by setting up a proxy server
-server: {
-proxy: {
-'/api': {
-target: 'https://api.jsonserve.com/Uw5CrX',
-changeOrigin: true,
-secure: false,
-rewrite: (path) => path.replace(/^\/api/, ''),
-},
-},
-},
+
+    server: {
+        proxy: {
+            '/api': {
+                target: 'https://api.jsonserve.com/Uw5CrX',
+                changeOrigin: true,
+                secure: false,
+                rewrite: (path) => path.replace(/^\/api/, ''),
+            },
+        },
+    },
 
 like this in the screen shot
 
